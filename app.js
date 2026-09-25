@@ -30,7 +30,7 @@ app.post("/products",(req,res)=>{
     const stmt=db.prepare("INSERT INTO PRODUCTS(name,price)VALUES(?,?)");
     const result=stmt.run(req.body.name,req.body.price);
     res.status(201).json({
-        message:"product created succesfully",
+        message:"product created successfully",
         id:result.lastInsertRowid
     });
 });
@@ -42,7 +42,7 @@ app.get("/products",(req,res)=>{
 
 app.get("/products/:id",(req,res)=>{
     const product=db.prepare(
-        "SELECT * FROM  PRODUCTS WHERE id=?"
+        "SELECT * FROM PRODUCTS WHERE id=?"
     ).get(req.params.id);
     if(!product){
         return res.status(404).json({
@@ -76,7 +76,7 @@ app.put("/products/:id",(req,res)=>{
         req.body.price,
         req.params.id
         );
-        if(result.changes==+0){
+        if(result.changes===0){
             return res.status(404).json({
                 message:"product not found"
             });
