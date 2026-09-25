@@ -22,6 +22,12 @@ Server runs on: **http://localhost:3000**
 
 ---
 
+## 🌐 Live Deployment
+
+**API is live at:** https://bd-1-simplerestapi-byte-1see.onrender.com
+
+All endpoints above work with the live URL too! Test with Postman.
+
 ## 📡 API Endpoints
 
 ### ✅ GET /products
