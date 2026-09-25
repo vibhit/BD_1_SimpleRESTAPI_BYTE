@@ -3,7 +3,7 @@
 **Project:** Simple REST API with Full CRUD Operations  
 **Built by:** Vibhit | AVIP 2026 @ B.Y.T.E by Arithmatrix  
 **Stack:** Node.js + Express + SQLite  
-**Status:** ✅ Deployed & Live
+**Status:** 🚀 Ready for Deployment
 
 ---
 
@@ -16,6 +16,8 @@ cd BD_1_SimpleRESTAPI_BYTE
 npm install
 node app.js
 ```
+
+> **Note:** This is for local development. For the live deployed API, see "Live Deployment" section below.
 Server runs on: **http://localhost:3000**
 
 ---
